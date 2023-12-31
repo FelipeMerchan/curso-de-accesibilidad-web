@@ -69,6 +69,8 @@ body, header, section {
   color: var(--gris-oscuro);
   border-radius: 5px;
   background: var(--verde);
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .header {
@@ -128,6 +130,15 @@ nav {
   color: var(--gris-oscuro);
 }
 
+.nav-item:focus-within {
+  background-color: var(--verde);
+}
+
+.nav-item a:focus {
+  outline: none;
+  color: var(--gris-oscuro);
+}
+
 .intro {
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
@@ -151,6 +162,15 @@ nav {
   text-decoration: none;
 }
 
+.social-media li a:focus {
+  outline: none;
+}
+
+.social-media li:focus-within {
+  padding: 8px;
+  outline: 3px solid var(--verde);
+}
+
 .social-link-text {
   padding: 4px 8px 0;
 }
@@ -163,7 +183,8 @@ nav {
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 815px;
+  padding: 8px;
 }
 
 .project-container {
@@ -178,7 +199,12 @@ nav {
 
 .project-container button {
   border: none;
+  padding: 0;
   background: none;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .project {
@@ -234,7 +260,8 @@ nav {
 }
 
 .form-label {
-  color: var(--blanco);
+  color: var(--verde);
+  font-family: var(--secondary-font);
 }
 
 .message-input input {
@@ -243,8 +270,12 @@ nav {
 }
 
 input {
-  outline: none;
   width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
 }
 
 .send-button {
@@ -261,6 +292,11 @@ input {
   margin-left: auto;
   font-size: 16px;
   cursor: pointer;
+}
+
+.send-button:focus {
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .notification {

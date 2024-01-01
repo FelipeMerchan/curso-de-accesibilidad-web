@@ -78,7 +78,7 @@ function showNotification() {
   }, 3000);
 }
 
-/** Esta funcion se llama cuando la persona hace click en cualquier porjecto del carousel */
+/** Esta funcion se llama cuando la persona hace click en cualquier proyecto del carousel */
 function openModal(e) {
   document.querySelector(".modal-container").style.display = "flex";
 }
